@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/scripts/01-CREATE-CAR-AND-ENGINE-TABLES.sql
+
+  - include:
+      file: db/changelog/scripts/03-CREATE-USERS-AND-ROLES.sql
+  - include:
+      file: db/changelog/scripts/04-ADD-ROLES.sql
+  - include:
+      file: db/changelog/scripts/05-ADD-BALANCE-TO-USER.sql

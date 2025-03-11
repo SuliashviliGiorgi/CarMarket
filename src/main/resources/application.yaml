@@ -1,0 +1,25 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/CarsMarket
+    username: postgres
+    password: Aa123456
+    driver-class-name: org.postgresql.Driver
+
+  liquibase:
+    change-log: db/changelog/db.changelog-master.yaml
+    default-schema: cars
+    liquibase-schema: cars
+
+jwt:
+  secret-key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.web.servlet.mvc.method.annotation: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql: trace
+

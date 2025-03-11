@@ -1,0 +1,1 @@
+ALTER TABLE app_user ADD COLUMN balance_in_cents BIGINT DEFAULT 0 NOT NULL;
